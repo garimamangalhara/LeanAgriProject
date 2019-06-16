@@ -1,0 +1,17 @@
+<div class="form-body">
+  <form>
+    <div class="form-group">
+      <label>User Id</label>
+      <input type="text" class="form-control" name="userId" [(ngModel)]="create.userId" placeholder="Enter userId">
+    </div>
+    <div class="form-group">
+      <label>Title</label>
+      <input type="text" class="form-control" name="title" [(ngModel)]="create.title" placeholder="Enter title">
+    </div>
+    <div class="form-group">
+      <label>Body</label>
+      <input type="text" class="form-control" name="body" [(ngModel)]="create.body" placeholder="Enter body">
+    </div>
+    <button type="submit" class="btn-create" (click)="createPost()">Create</button>
+  </form>
+</div>

@@ -1,0 +1,53 @@
+.list-group{
+    margin-top:50px;
+}
+.list-group-item:hover{
+    color:black;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.list-group-item{
+    color: #555;
+    margin:10px 20px 10px 20px;
+    border:none;
+    border-radius:8px;
+}
+.odd-item{
+    background-color: #37606975;
+}
+.even-item{
+    background-color: #5ca2b275;
+}
+.post-body{
+    background-color:#74acb975;
+}
+.btn-update {
+    color: #fff;
+    background-color: #20414875;
+    border:1px #20414875;
+    border-radius: 2px; 
+    margin:10px;
+    float:right;
+    padding:8px;
+}
+.btn-create button {
+    color: #fff;
+    background-color: #20414875;
+    border:1px #20414875;
+    border-radius: 2px; 
+    margin:10px;
+    padding:8px;
+}
+.btn-create label{
+    font-size: 30px;
+    font-weight:bold;
+    color:#31829b;
+}
+.btn-create{
+    height:50px;
+    text-align: center;
+}
+.title{
+    color:#31829b;
+    font-weight:bold;
+}

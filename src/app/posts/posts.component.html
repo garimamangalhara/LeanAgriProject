@@ -1,0 +1,22 @@
+<div class="post-body">
+  <div class="btn-create">
+    <div>
+      <label>Posts</label>
+    </div>
+    <div>
+      <button (click)="createPost()">Create Post</button>
+    </div>
+  </div>
+
+  <div class="list-group">
+    <a *ngFor="let post of postList;let odd=odd;let even=even" (click)="navigateToDetails(post.id)" class="list-group-item" [ngClass]="{'odd-item':odd,'even-item':even}">
+      <div class="title">
+        <span>{{post.title}}</span>
+      </div>
+      <div>
+        <span>{{post.body}}</span>
+      </div>
+      <button class="btn-update" (click)="updatePost(post.id)">Update</button>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="post-body">
+  <div class="details">
+  <span>
+    <label>Title: {{postData?.title}}</label>
+    <p>{{postData?.body}}</p>
+  </span>
+  </div>
+  <div class="dialogbox" *ngFor="let comment of comments;let index=index;let odd=odd;let even=even">
+    <div class="body">
+      <span class="tip tip-left"></span>
+      <div class="message">
+        <div class="name">
+          {{comment.name}}
+        </div>
+        <div class="email">
+          {{comment.email}}
+        </div>
+        <span>{{comment.body}}</span>
+      </div>
+    </div>
+  </div>
+</div>
